@@ -1,0 +1,1366 @@
+@include('partials/head.html')
+
+<body class="home">
+  @include('partials/header.html')
+
+  <main>
+
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-section__box">
+
+          <h1 class="hero-section__title">
+            <span class="red-text">Вступна кампанія </span><br>
+            на бюджет до ВНЗ <br>
+            <span class="blue-text">Словаччини під ключ </span>
+          </h1>
+
+          <div class="hero-section__image">
+            <picture>
+              <source type='image/webp' srcset='img/img.webp'>
+              <img loading='lazy' width='860' height='783' src='img/img.png' alt='image'>
+            </picture>
+          </div>
+
+          <p class="hero-section__deskr"><b>Отримайте повний супровід при вступі до ВНЗ Словаччини</b> — від тестування
+            з профорієнтації та <i class="underline-text">вибору
+              університету</i> і до оформлення всіх документів та <i class="underline-text">зарахування на бюджет</i> на
+            обрану спеціальність</p>
+
+          <a href="#form" class="main-button main-button--blue hero-section__btn">
+            Отримати консультацію
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="second-section">
+      <div class="container">
+        <div class="second-section__box">
+          <h2 class="second-section__title">
+            Чому Словаччина — це прекрасний старт для українських випускників на шляху до міжнародної кар’єри?
+          </h2>
+
+          <div class="second-section__wrapper">
+            <ul class="check-list">
+              <li class="check-list__item">
+                <svg width="45" height="45">
+                  <use href='img/sprite/sprite.svg#check'></use>
+                </svg>
+                <p><b class="red-text">Безкоштовне навчання </b>у ВНЗ</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="45" height="45">
+                  <use href='img/sprite/sprite.svg#check'></use>
+                </svg>
+                <p>Вступ до університету<b class="red-text"> без ЗНО / НМТ</b></p>
+              </li>
+              <li class="check-list__item">
+                <svg width="45" height="45">
+                  <use href='img/sprite/sprite.svg#check'></use>
+                </svg>
+                <p>Словацька мова подібна на <b class="red-text">68 % </b>до української</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="45" height="45">
+                  <use href='img/sprite/sprite.svg#check'></use>
+                </svg>
+                <p>Проживання та харчування студента всього <b class="red-text">250 € </b>на місяць</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="45" height="45">
+                  <use href='img/sprite/sprite.svg#check'></use>
+                </svg>
+                <p>Диплом бакалавра європейського зразка за <b class="red-text">3 роки</b></p>
+              </li>
+              <li class="check-list__item">
+                <svg width="45" height="45">
+                  <use href='img/sprite/sprite.svg#check'></use>
+                </svg>
+                <p>Словаччина — член ЄС та НАТО з 2004 року</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="45" height="45">
+                  <use href='img/sprite/sprite.svg#check'></use>
+                </svg>
+                <p>Офіційний вид на проживання в ЄС 🇪🇺</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="45" height="45">
+                  <use href='img/sprite/sprite.svg#check'></use>
+                </svg>
+                <p>Кар’єра у будь-якій країні Європи</p>
+              </li>
+            </ul>
+
+            <div class="second-section__image">
+              <picture>
+                <source type='image/webp' srcset='img/img2.webp'>
+                <img loading='lazy' width='970' height='648' src='img/img2.png' alt='image'>
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="invite-section">
+      <div class="container">
+        <div class="invite-section__box">
+          <div class="main-top">
+            <h2 class="main-top__title">
+              Випускник може обрати напрямок навчання за своїм покликом та інтегруватись у європейське суспільство
+            </h2>
+          </div>
+          <div class="invite-section__wrapper">
+
+            <div class="invite-section__image">
+              <picture>
+                <source type='image/webp' srcset='img/img3.webp'>
+                <img width='518' height='345' src='img/img3.png' alt='image'>
+              </picture>
+            </div>
+
+            <ul class="count-list">
+              <li class="count-list__item">
+                <p>ЄС фінансує навчання на бюджеті — на кожного студента виділяється університету в Словаччині
+                  <b class="blue-text">5000-7000 €</b> на навчальний рік:
+                </p>
+
+                <ul class="check-list">
+                  <li class="check-list__item">
+                    <svg width="35" height="35">
+                      <use href='img/sprite/sprite.svg#check2'></use>
+                    </svg>
+                    <p><b class="blue-text">на оплату з/п викладачам та персоналу</b></p>
+                  </li>
+                  <li class="check-list__item">
+                    <svg width="35" height="35">
+                      <use href='img/sprite/sprite.svg#check2'></use>
+                    </svg>
+                    <p><b class="blue-text">на утримання та розвиток інфраструктури</b></p>
+                  </li>
+                  <li class="check-list__item">
+                    <svg width="35" height="35">
+                      <use href='img/sprite/sprite.svg#check2'></use>
+                    </svg>
+                    <p><b class="blue-text">на наукові гранти та стипендії</b></p>
+                  </li>
+                </ul>
+              </li>
+
+
+
+              <li class="count-list__item">
+                <p>В Словаччині, <i class="underline-text">немає непрестижних або низькооплачуваних професій</i> для
+                  людей з вищою освітою</p>
+              </li>
+
+              <li class="count-list__item">
+                <p>Випускник, маючи диплом про вищу освіту міжнародного зразка, може розраховувати на стартову з/п <b
+                    class="blue-text">від
+                    1000-1500<br> €</b> на місяць в Словаччині</p>
+              </li>
+
+              <li class="count-list__item">
+                <p>Абітурієнт може <i class="underline-text">обрати будь-яку майбутню професію за покликанням серця</i>,
+                  своїми інтересами та здібностями:</p>
+
+                <ul class="prof-list">
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">пілотом авіалайнера</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">художником</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">пластичним хірургом</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">архітектором</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">ІТвцем</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">менеджером</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">інженером</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">перекладачем</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">філологом</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">соціальним працівником</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">пілотом авіалайнера</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">художником</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">пластичним хірургом</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">офіцером поліції</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">адвокатом</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">політиком</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">лікарем</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">ветеринаром</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">модним дизайнером</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">дизайнером інтер’єрів</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">викладачем</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">математиком</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">науковецем</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">біологом</p>
+                  </li>
+                  <li class="prof-list__item">
+                    <p class="prof-list__name">екологом</p>
+                  </li>
+                </ul>
+              </li>
+
+
+
+              <li class="count-list__item">
+                <p>Можливість скористатись програмою обміну студентів Erasmus+, поїхати навчатись  в іншу країну та
+                  <i class="underline-text">отримувати стипендію</i> від <b class="blue-text">300 €</b> до <b class="blue-text">1000 €</b> на місяць
+                </p>
+              </li>
+
+              <li class="count-list__item">
+                <p>За <i class="underline-text">3 роки навчання на бакалавраті</i> в Словаччині студент долучається до
+                  європейської спільноти, системи
+                  цінностей та менталітету</p>
+              </li>
+
+              <li class="count-list__item">
+                <p>Після бакалаврату в Словаччині студент може <i class="underline-text">вступити на магістратуру на
+                    бюджет до університетів країн
+                    Європи</i> за своєю спеціальністю, закінчити магістратуру та розпочати кар’єру в обраній країн</p>
+              </li>
+
+              <li class="count-list__item">
+                <div class="count-list__image">
+                  <picture>
+                    <source type='image/webp' srcset='img/img6.webp'>
+                    <img width='668' height='345' src='img/img6.png' alt='image'>
+                  </picture>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="spiker-section">
+      <div class="container">
+        <div class="spiker-section__box">
+          <div class="main-top">
+            <h2 class="main-top__title">
+              Велика кількість престижних державних університетів
+            </h2>
+          </div>
+
+          <ul class="check-list">
+            <li class="check-list__item check-list__item--mode">
+              <svg width="35" height="35">
+                <use href='img/sprite/sprite.svg#bulb'></use>
+              </svg>
+              <b>Болонська система навчання</b>
+            </li>
+            <li class="check-list__item">
+              <svg width="35" height="35">
+                <use href='img/sprite/sprite.svg#check2'></use>
+              </svg>
+              Можливість самостійно обирати визначену кількість предметів для вивчення
+            </li>
+            <li class="check-list__item">
+              <svg width="35" height="35">
+                <use href='img/sprite/sprite.svg#check2'></use>
+              </svg>
+              Якщо не вдалось скласти іспити по 1-2 предметам, можна без відрахування студента перенести їх на наступний
+              навчальний рік та краще підготуватись
+            </li>
+
+          </ul>
+
+          <ul class='university-acc' data-accordion-init>
+            <li class='university-acc__item'>
+              <div class='university-acc__content' data-content='1'>
+                <ul class="university-list">
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img1.webp'>
+                          <img width='568' height='401' src='img/university/img1.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Пряшівський університет, м. Пряшів</span>
+                      <p>У ВНЗ працює понад 1000 викладачів і навчається близько 12 500 студентів. Тут вам забезпечать
+                        найвищі
+                        стандарти навчання. Університет займає третє місце у Словаччині за кількістю факультетів.</p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img2.webp'>
+                          <img width='568' height='401' src='img/university/img2.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Технічний університет, м. Кошице</span>
+                      <p>Забезпечує отримання знань в ІТ області, областях електротехніки, електронного обладнання,
+                        телекомунікаційних мереж, кібернетики. У всіх навчальних програмах є можливість отримати
+                        стипендію.</p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img3.webp'>
+                          <img width='568' height='401' src='img/university/img3.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Університет Коменського в<br> Братиславі</span>
+                      <p>Класичний університет у столиці Словаччини місті Братиславі. Один із найбільших,
+                        найпрестижніших та найстаріших, з нині діючих, вищих навчальних закладів у країні.</p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img4.webp'>
+                          <img width='568' height='401' src='img/university/img4.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Жилінський університет, м. Жиліна</span>
+                      <p>Найкращий транспортний закладом навчання у Європі, а також — один із найпотужніших технічних
+                        університетів у Словаччині.</p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img5.webp'>
+                          <img width='568' height='401' src='img/university/img5.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Економічний університет, <br>м. Братислава</span>
+                      <p>Найкращий економічний університет у Словаччині. Тут діє 19 навчальних програм (для бакалаврів),
+                        30 програм (для магістрів) і 16 – для докторантури.</p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img6.webp'>
+                          <img width='568' height='401' src='img/university/img6.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Сільськогосподарський університет, <br>м. Нітра</span>
+                      <p>Центр аграрної освіти, науки та досліджень. У 2010 році він першим у Словаччині отримав статус
+                        ECTS. Заклад розширює свою роботу на міжнародному рівні, як в області викладання, так і у
+                        наукових дослідженнях.</p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img7.webp'>
+                          <img width='568' height='401' src='img/university/img7.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Трнавський університет, м. Трнава</span>
+                      <p>Один з найстаріших університетів Словаччини. Став відомим завдяки обсерваторії,
+                        університетській бібліотеці та садам. Університет оснащений Центром інформаційних технологій,
+                        який забезпечує використання інформаційно-комунікаційних технологій для участі в
+                        науково-дослідній діяльності університету.</p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img8.webp'>
+                          <img width='568' height='401' src='img/university/img8.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Університет Матея Бела, м. Банська Бистриця</span>
+                      <p>Навчальний заклад був заснований в 1978 році, а в 2010 захистив статус університету. На
+                        сьогоднішній день він є одним з найкращих вищих навчальних закладів не лише в Словаччині, а й в
+                        усій східно-європейській частині Євросоюзу. ERUDITIO MORES FUTURUM — девіз університету, що в
+                        перекладі з латини означає «освіта створює майбутнє».</p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img10.webp'>
+                          <img width='568' height='401' src='img/university/img10.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Університет Костянтина Філософа,<br> м. Нітра</span>
+                      <p>Шостий найкращий університет Словаччини за Рейтингом найкращих університетів 2019 (EECA QS
+                        Rankings 2019 TOP 200).Щорічно в університеті навчається в середньому 12 000 студентів на всіх
+                        рівнях та формах навчання на 5 факультетах, що пропонують освіту за акредитованими програмами
+                        бакалаврату, магістратури та докторантури.</p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img10.webp'>
+                          <img width='568' height='401' src='img/university/img10.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Університет ім. Павла Йозефа<br> Шафарика, м.Кошице</span>
+                      <p>Відомий не тільки у Словаччині, а й у всій Європі. Навчальна програма закладу пропрацьована
+                        відносно Болонської декларації та сучасний європейських тенденцій освіти. Перевагою закладу є
+                        дослідний статус. У ньому здійснюються наукові дослідження світового значення.</p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img11.webp'>
+                          <img width='568' height='401' src='img/university/img11.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Університет Олександра Дубчека, м. Тренчин</span>
+                      <p>Відносно молодий університет, що дуже стрімко розвивається, університет випускає
+                        висококваліфікованих спеціалістів у таких сферах як: спеціальні технології, матеріалознавство і
+                        організація природоохоронної діяльності, менеджмент, регіональна економіка, політологія, охорона
+                        здоров’я, мистецтво і дизайн. В університеті можна здобути всі три рівні вищої освіти –
+                        бакалавр, магістр і доктор наук.</p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img12.webp'>
+                          <img width='568' height='401' src='img/university/img12.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Словацький технічний університет,<br> м. Братислава</span>
+                      <p>Один з найкращих технічних вузів Європи. Випускники цього університету – одні з найбільш
+                        затребуваних і високооплачуваних фахівців на світовому ринку праці. Університет випускає
+                        бакалаврів, інженерів, магістрів і аспірантів. Він також пропонує навчання за програмами
+                        безперервної освіти і МВА-навчання у співпраці з Технічним університетом у Відні.</p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img13.webp'>
+                          <img width='568' height='401' src='img/university/img13.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Академія мистецтв, м. Банська<br> Бистриця</span>
+                      <p>Створена в 1997 році. Тут готують фахівців-режисерів та професійних артистів, художників,
+                        скульпторів, графіків, фахівців у галузі професійного концертного мистецтва: солістів, акторів,
+                        концертих та оперних співаків, композиторів та диригентів</p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img14.webp'>
+                          <img width='568' height='401' src='img/university/img14.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Вища школа виконавських<br> мистецтв, м. Братислава</span>
+                      <p>Найбільша школа мистецтв Словаччини, налічує 1050 студентів. Пропонує студентам подальший
+                        розвиток талантів у навчальних програмах театру, кіно, музики та танцю, що призводить їх до
+                        глибокого проникнення в досліджувані сфери в контексті європейської культури.</p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img15.webp'>
+                          <img width='568' height='401' src='img/university/img15.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Словацький медичний університет, <br>м. Братислава</span>
+                      <p>Сучасний педагогічний і науковий університет, орієнтований на всі аспекти підготовки нових
+                        лікарів та інших працівників охорони здоров’я. Словацький медичний університет забезпечує
+                        спеціалізоване і безперервне навчання практикуючих лікарів. Готує фахівців усіх медичних
+                        напрямків. Випускників університету приймають на роботу в медичні установи по всьому світу.</p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img16.webp'>
+                          <img width='568' height='401' src='img/university/img16.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Технічний університет, м.Зволен</span>
+                      <p>Сучасний вищий навчальний заклад, який реалізовує творчі та наукові дослідження. В системі
+                        університетів в Словаччині ВНЗ має унікальний профіль з акцентом на лісоводство, екологію,
+                        комплекс навколишнього середовища з відповідним розширенням інших технічних, природних,
+                        безпечних, економічних та мистецьких сфер.</p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img17.webp'>
+                          <img width='568' height='401' src='img/university/img17.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Університет ветеринарної медицини <br>та фармацевтики, м.
+                        Кошице</span>
+                      <p>Університет розташований у закритому районі на вулиці Коменського в Кошицях. Він також включає
+                        в себе споруди спеціального призначення поза комплексом, зокрема заклад спеціального призначення
+                        для розведення та дичини, риби та бджіл у Рожанівце та кінно-спортивний комплекс.</p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img18.webp'>
+                          <img width='568' height='401' src='img/university/img18.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Університет святих Кирила та <br>Мефодія, м.Трнава</span>
+                      <p>Сучасний освітній заклад, який надає студентам широкі можливості вибору спеціальностей як у
+                        філософській та художніх сферах, так і в галузі інноваційних біотехнологій і медіа-комунікацій.
+                      </p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                  <li class="university-list__item">
+                    <div class="university-list__card">
+                      <div class="university-list__image">
+                        <picture>
+                          <source type='image/webp' srcset='img/university/img19.webp'>
+                          <img width='568' height='401' src='img/university/img19.png' alt='image'>
+                        </picture>
+                      </div>
+                      <span class="university-list__title">Вища школа музичного мистецтва в Братиславі</span>
+                      <p>Державний ВНЗ в галузі театрального, музичного, танцювального і кінематографічного мистецтва.
+                      </p>
+                    </div>
+                    <button class="main-button main-button--transparent">Отримати консультацію</button>
+                  </li>
+                </ul>
+              </div>
+
+              <button class='university-acc__btn' data-id='1'>
+                <span>Переглянути більше університетів</span>
+                <svg width='40' height='40'>
+                  <use href='img/sprite/sprite.svg#arrow'></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="education-section">
+      <div class="container">
+        <div class="education-section__box">
+          <div class="main-top">
+            <h2 class="main-top__title">
+              Зручна електронна навчальна система студента
+            </h2>
+          </div>
+
+          <div class="education-section__image">
+            <picture>
+              <source type='image/webp' srcset='img/img4.webp'>
+              <img width='1168' height='707' src='img/img4.png' alt='image'>
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="living-section">
+      <div class="container">
+        <div class="living-section__box">
+          <div class="main-top">
+            <h2 class="main-top__title">
+              Сучасні умови проживання в студентських кампусах
+            </h2>
+          </div>
+
+          <ul class="images-list">
+            <li class="images-list__item">
+              <div class="images-list__picture">
+                <picture>
+                  <source type='image/webp' srcset='img/img5.webp'>
+                  <img width='470' height='276' src='img/img5.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+            <li class="images-list__item">
+              <div class="images-list__picture">
+                <picture>
+                  <source type='image/webp' srcset='img/img7.webp'>
+                  <img width='470' height='276' src='img/img7.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+            <li class="images-list__item">
+              <div class="images-list__picture">
+                <picture>
+                  <source type='image/webp' srcset='img/img8.webp'>
+                  <img width='470' height='276' src='img/img8.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+            <li class="images-list__item">
+              <div class="images-list__picture">
+                <picture>
+                  <source type='image/webp' srcset='img/img9.webp'>
+                  <img width='470' height='276' src='img/img9.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="diversity-section">
+      <div class="container">
+        <div class="diversity-section__box">
+          <div class="main-top">
+            <h2 class="main-top__title">
+              Різноманіття студентського позанавчального життя
+            </h2>
+          </div>
+
+          <ul class="images-list">
+            <li class="images-list__item">
+              <div class="images-list__picture">
+                <picture>
+                  <source type='image/webp' srcset='img/img10.webp'>
+                  <img width='470' height='276' src='img/img10.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+            <li class="images-list__item">
+              <div class="images-list__picture">
+                <picture>
+                  <source type='image/webp' srcset='img/img11.webp'>
+                  <img width='470' height='276' src='img/img11.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+            <li class="images-list__item">
+              <div class="images-list__picture">
+                <picture>
+                  <source type='image/webp' srcset='img/img12.webp'>
+                  <img width='470' height='276' src='img/img12.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+            <li class="images-list__item">
+              <div class="images-list__picture">
+                <picture>
+                  <source type='image/webp' srcset='img/img13.webp'>
+                  <img width='470' height='276' src='img/img13.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+
+          </ul>
+
+          <div class="diversity-section__inner">
+            <p><b>При кожному університеті є безліч спільнот за інтересами та гуртків:</b></p>
+            <ul class="check-list">
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check2'></use>
+                </svg>
+                <p>театральний гурток</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check2'></use>
+                </svg>
+                <p>спортивні секції</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check2'></use>
+                </svg>
+                <p>власна газета</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check2'></use>
+                </svg>
+                <p>інтернет-телебачення</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check2'></use>
+                </svg>
+                <p>університетське радіо</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check2'></use>
+                </svg>
+                <p>літературний і музичний гуртки</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check2'></use>
+                </svg>
+                <p>танцювальні класи</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check2'></use>
+                </svg>
+                <p>образотвоче мистецство</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check2'></use>
+                </svg>
+                <p>літні та зимові табори</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check2'></use>
+                </svg>
+                <p>подорожі та екскурсії Європою</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check2'></use>
+                </svg>
+                <p>відвідування тематичних конференцій та заходів</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check2'></use>
+                </svg>
+                <p>наукові дослідження</p>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sales-section">
+      <div class="container">
+        <div class="sales-section__box">
+          <div class="main-top">
+            <h2 class="main-top__title">
+              Неймовірна кількість знижок та привілеїв для студента
+            </h2>
+          </div>
+
+          <div class="sales-section__inner">
+            <p><b>ISIC</b> — міжнародний студентський квиток, що надає дуже приємні бонуси, серед яких:</p>
+
+            <ul class="check-list">
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check3'></use>
+                </svg>
+                <p>знижки в різні громадські заклади: басейни, аквапарки, зоопарки, музеї тощо</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check3'></use>
+                </svg>
+                <p>знижки на громадський транспорт <b>50%</b></p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check3'></use>
+                </svg>
+                <p>знижки на автобус <b>40%</b></p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check3'></use>
+                </svg>
+                <p>безкоштовний проїзд поїздами</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check3'></use>
+                </svg>
+                <p>на початку навчального року надаються додаткові купони на знижки в магазини одягу, техніки, кафе і тд
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-section">
+      <div class="container">
+        <div class="work-section__box">
+          <div class="main-top">
+            <h2 class="main-top__title">
+              Студентський підробіток дуже вітається у Словаччині
+            </h2>
+          </div>
+
+          <div class="work-section__image">
+            <picture>
+              <source type='image/webp' srcset='img/img14.webp'>
+              <img width='770' height='514' src='img/img14.png' alt='image'>
+            </picture>
+          </div>
+
+          <div class="work-section__inner">
+            <p class="work-section__deskr">
+              <svg width='35' height='35'>
+                <use href='img/sprite/sprite.svg#bulb'></use>
+              </svg>
+              <b>Оплата праці для студентів складає <i class="blue-text">4,5-5 €</i> на годину</b>
+            </p>
+            <p>Абсолютно різні варіанти погодинної роботи для студентів:</p>
+
+            <ul class="check-list">
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check3'></use>
+                </svg>
+                <p>на пошті</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check3'></use>
+                </svg>
+                <p>в ресторані</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check3'></use>
+                </svg>
+                <p>в бібліотеці</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check3'></use>
+                </svg>
+                <p>в супермаркеті</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check3'></use>
+                </svg>
+                <p>в готелі</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check3'></use>
+                </svg>
+                <p>в торгівельному центрі</p>
+              </li>
+              <li class="check-list__item">
+                <svg width="35" height="35">
+                  <use href='img/sprite/sprite.svg#check3'></use>
+                </svg>
+                <p>по професії</p>
+              </li>
+            </ul>
+
+            <p class="pretitle-top">За бажанням студента можна підпрацьовувати щосуботи або в інші дні і <b>отримувати
+                додаткові <i class="blue-text">150-200 €</i> або більше щомісяця</b></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sales-section sales-section--completing">
+      <div class="container">
+        <div class="sales-section__box">
+          <div class="main-top">
+            <h2 class="main-top__title">
+              Після закінчення бакалаврату в Словаччині:
+            </h2>
+          </div>
+
+          <ul class="count-list">
+            <li class="count-list__item">
+              <p>Студент може вступити <i class="underline-text">на бюджет на магістратуру</i> в будь-якій країні Європи
+              </p>
+            </li>
+
+            <li class="count-list__item">
+              <p>Паралельно влаштуватись на оплачуване стажування за своєю спеціальністю</p>
+            </li>
+
+            <li class="count-list__item">
+              <p>Почати побудову своєї кар’єри мрії в Європі!</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-section work-section--prospects">
+      <div class="container">
+        <div class="work-section__box">
+          <div class="main-top">
+            <h2 class="main-top__title">
+              <i class="blue-text">Для Вас відчинені двері до надзвичайно великих можливостей та перспектив!</i>
+            </h2>
+          </div>
+
+          <div class="work-section__image">
+            <picture>
+              <source type='image/webp' srcset='img/img15.webp'>
+              <img width='816' height='327' src='img/img15.png' alt='image'>
+            </picture>
+          </div>
+
+          <button class="down-button down-button--blue">
+            <svg width='100' height='100'>
+              <use href='img/sprite/sprite.svg#arrow-d'></use>
+            </svg>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="road-section">
+      <div class="container">
+        <div class="road-section__box">
+          <div class="main-top">
+            <h2 class="main-top__title">
+              Наш з Вами покроковий план вступної кампанії з <i class="red-text">гарантованим зарахуванням на бюджет</i>
+              до ВНЗ у Словаччині
+            </h2>
+          </div>
+
+          <ul class="road-list">
+            <li class="road-list__item">
+              <div class="road-top">
+                <span class="road-top__count">Крок 1</span>
+                <h4 class="road-top__title">Визначення напрямку майбутньої професії абітурієнта</h4>
+              </div>
+              <ul class="count-list">
+                <li class="count-list__item">
+                  <p><i class="underline-text">Консультація з експертом з профорієнтації та визначення напрямків для
+                      навчання, які надихають абітурієнта</i></p>
+                </li>
+                <li class="count-list__item">
+                  <p>Тестування з профорієнтації та підтвердження або корегування напрямку для навчання</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Визначаємось з університетом та факультетом в Словаччині.</p>
+                </li>
+              </ul>
+              <button class="main-button">Отримати консультацію безкоштовно</button>
+              <div class="road-list__icon  road-list__icon--right">
+                <picture>
+                  <source type='image/webp' srcset='img/icons/icon1.webp'>
+                  <img width='300' height='300' src='img/icons/icon1.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+            <li class="road-list__item">
+              <div class="road-top">
+                <span class="road-top__count">Крок 2</span>
+                <h4 class="road-top__title">Підписуємо контракт на повний супровід вступної кампанії</h4>
+              </div>
+              <ul class="count-list">
+                <li class="count-list__item">
+                  <p>Детально знайомитесь з усіма витратами та графіком платежів на вступну кампанію</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Укладаємо офіційний договір на <b class="blue-text">повний супровід Вашої вступної кампанії на
+                      бюджет до ВНЗ у
+                      Словаччині</b></p>
+                </li>
+                <li class="count-list__item">
+                  <p>Оплата послуг агенції: повна вартість супроводу складає <b class="blue-text">1200 €</b>, на цьому
+                    кроці ви <i class="underline-text">здійснюєте
+                      передоплату у розмірі</i> <b class="red-text">50%</b>, тобто <b class="blue-text">600 €</b>.</p>
+                </li>
+              </ul>
+              <div class="road-list__icon road-list__icon--mode road-list__icon--mode-top">
+                <picture>
+                  <source type='image/webp' srcset='img/icons/icon2.webp'>
+                  <img width='300' height='300' src='img/icons/icon2.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+            <li class="road-list__item">
+              <div class="road-top">
+                <span class="road-top__count">Крок 3</span>
+                <h4 class="road-top__title">Починаємо вивчення словацької мови</h4>
+              </div>
+              <ul class="count-list">
+                <li class="count-list__item">
+                  <p>Курс словацької мови з викладачем-педагогом триває 3,5 місяці в групах по 6 абітурієнтів онлайн <i
+                      class="red-text">(30
+                      занять по 2 на тиждень)</i></p>
+                </li>
+                <li class="count-list__item">
+                  <p>Вартість мовного курсу становить орієнтовно від <b class="blue-text">5200 грн</b> <i
+                      class="red-text">(170 грн за 1 заняття тривалістю 1 годину)</i>.</p>
+                </li>
+              </ul>
+              <p class="road-list__deskr">На першому курсі студент отримує рівень володіння словацькою мовою А1-А2 з
+                можливістю продовжити навчання та покращити свій рівень до B1-B2 </p>
+              <div class="road-list__icon road-list__icon--top road-list__icon--top-mode">
+                <picture>
+                  <source type='image/webp' srcset='img/icons/icon4.webp'>
+                  <img width='300' height='300' src='img/icons/icon4.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+            <li class="road-list__item">
+              <div class="road-top">
+                <span class="road-top__count">Крок 4</span>
+                <h4 class="road-top__title">Підготовка документів для подачі до ВНЗ</h4>
+              </div>
+              <ul class="count-list">
+                <li class="count-list__item">
+                  <p>Отримуєте особистого куратора з відділу турботи, який буде супроводжувати Вас протягом усієї
+                    вступної
+                    кампанії та адаптації студента в Словаччині</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Куратор надає список необхідних документів</b></p>
+                </li>
+                <li class="count-list__item">
+                  <p>Ви надсилаєте необхідні документи куратору</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Нотаріальний переклад всіх документів в Словаччині. <i class="underline-text">Вартість послуг
+                      Нотаріуса:</i> <b class="blue-text">30 €</b> за 1 сторінку
+                    (зазвичай це додатково від <b class="blue-text">170 €</b>).</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Додатково офіційно оплачується вступна заява до ВНЗ:<br> <b class="blue-text">20 € / 1 заява.</b>
+                  </p>
+                </li>
+                <li class="count-list__item">
+                  <p>Техвідділ подає вступні заяви на декілька визначених спеціальностей в декілька ВНЗ при відповідній
+                    домовленості.</p>
+                </li>
+              </ul>
+              <div class="road-list__icon road-list__icon--mode">
+                <picture>
+                  <source type='image/webp' srcset='img/icons/icon3.webp'>
+                  <img width='300' height='300' src='img/icons/icon3.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+            <li class="road-list__item">
+              <div class="road-top">
+                <span class="road-top__count">Крок 5</span>
+                <h4 class="road-top__title">Вступаємо до ВНЗ</h4>
+              </div>
+              <ul class="count-list">
+                <li class="count-list__item">
+                  <p>Відділ турботи веде комунікацію з представниками ВНЗ</p>
+                </li>
+                <li class="count-list__item">
+                  <p>За наявності вступного іспиту студент приїжджає в Словаччину до університету, де його зустрічає
+                    куратор</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Абітурієнт складає вступний іспит <i class="red-text">(у 90 % випадках вступні іспити складати не
+                      потрібно)</i>.</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Отримуємо підтвердження на зачислення від одного з ВНЗ.</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Оплата другої частини вартості послуг агенції: <b class="blue-text">600 €</b>.</p>
+                </li>
+              </ul>
+              <div class="road-list__icon road-list__icon--top road-list__icon--top-mode">
+                <picture>
+                  <source type='image/webp' srcset='img/icons/icon5.webp'>
+                  <img width='300' height='300' src='img/icons/icon5.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+            <li class="road-list__item">
+              <div class="road-top">
+                <span class="road-top__count">Крок 6</span>
+                <h4 class="road-top__title">Трансфер до університету та заселення в гуртожиток</h4>
+              </div>
+              <ul class="count-list">
+                <li class="count-list__item">
+                  <p>Бронюємо гуртожиток. Оплачується окремо: <b class="blue-text">65-90 €</b> на місяць.</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Організовуємо трансфер. Витрати на проїзд оплачуються окремо.</p>
+                </li>
+                <li class="count-list__item">
+                  <p>В Словаччині зустрічає куратор та супроводжує під час заселення в гуртожиток</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Допомагаємо придбати sim-карту та налаштувати доступ до мережі інтернет.</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Проводимо інструктаж з правил проживанняв в гуртожитку і правил перебування в країні з власного
+                    досвіду.</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Надаємо інформацію як використовувати студентські привілегії в Словаччині та ЄС та як налагодити
+                    побут. На харчування потрібно планувати <b class="blue-text">150€</b> на місяць.</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Допомагаємо розібратись в електронній системі навчання.</p>
+                </li>
+              </ul>
+              <div class="road-list__icon road-list__icon--mode road-list__icon--mode-top">
+                <picture>
+                  <source type='image/webp' srcset='img/icons/icon6.webp'>
+                  <img width='300' height='300' src='img/icons/icon6.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+            <li class="road-list__item">
+              <div class="road-top">
+                <span class="road-top__count">Крок 7</span>
+                <h4 class="road-top__title">Отримуємо всі необхідні документи студента в Словаччині</h4>
+              </div>
+              <ul class="count-list">
+                <li class="count-list__item">
+                  <p>Подаємо заяву та отримуємо студентський квиток.</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Бронюємо чергу в міграційній поліції для отримання посвідки на проживання.<br>Офіційний платіж
+                    додатково: <b class="blue-text">5 €</b>.</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Виготовляємо нострифікацію. Офіційний платіж<br> додатково: <b class="blue-text">7 €</b>.</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Відкриваємо банківський рахунок.</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Збираємо документи для міграційної поліції.</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Супроводжуємо студента для отримання посвідки на проживання в Словаччині.</p>
+                </li>
+              </ul>
+              <div class="road-list__icon road-list__icon--top road-list__icon--top-mode">
+                <picture>
+                  <source type='image/webp' srcset='img/icons/icon7.webp'>
+                  <img width='300' height='300' src='img/icons/icon7.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+            <li class="road-list__item">
+              <div class="road-top">
+                <span class="road-top__count">Крок 8</span>
+                <h4 class="road-top__title">Медичний огляд</h4>
+              </div>
+              <ul class="count-list">
+                <li class="count-list__item">
+                  <p>Допомагаємо зареєструватися на проходження<br> медичного огляду.</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Медичний огляд оплачується окремо: <b class="blue-text">150 €</b>.</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Супроводжуємо студента на медичний огляд.</p>
+                </li>
+              </ul>
+
+              <div class="road-list__icon road-list__icon--mode-left">
+                <picture>
+                  <source type='image/webp' srcset='img/icons/icon8.webp'>
+                  <img width='300' height='300' src='img/icons/icon8.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+            <li class="road-list__item">
+              <div class="road-top">
+                <span class="road-top__count">Крок 9</span>
+                <h4 class="road-top__title">Успішне навчання на бюджеті у ВНЗ в Словаччині</h4>
+              </div>
+              <ul class="count-list">
+                <li class="count-list__item">
+                  <p>Куратор залишається на зв'язку зі студентом.</p>
+                </li>
+                <li class="count-list__item">
+                  <p>Студент відвідує пари, живе повноцінним<br> позанавчальним життям та пам’ятає про свою ціль в
+                    рамках
+                    стратегії побудови кар’єри в Європі.</p>
+                </li>
+              </ul>
+              <div class="road-list__icon road-list__icon--top road-list__icon--top-mode">
+                <picture>
+                  <source type='image/webp' srcset='img/icons/icon9.webp'>
+                  <img width='300' height='300' src='img/icons/icon9.png' alt='image'>
+                </picture>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="work-section work-section--road">
+      <div class="container">
+        <div class="work-section__box">
+          <div class="main-top">
+            <h2 class="main-top__title">
+              Чи виглядає для вас достатньо насиченим цей шлях?
+            </h2>
+          </div>
+
+          <div class="work-section__image">
+            <picture>
+              <source type='image/webp' srcset='img/img16.webp'>
+              <img width='630' height='379' src='img/img16.png' alt='image'>
+            </picture>
+          </div>
+
+          <div class="work-section__deskr">
+            <p>Насправді так і є, але <b>наша команда пройшла цей шлях більш ніж <i class="underline-text">1600
+                  разів</i></b> — таким чином 1600+
+              абітурієнтів стали студентами ВНЗ країн ЄС з нашою допомогою.</p>
+
+            <p><i class="blue-text blue-text--mode">Отже і вам обов’язково допоможемо 👌</i></p>
+
+            <button class="down-button">
+              <svg width='100' height='100'>
+                <use href='img/sprite/sprite.svg#arrow-d'></use>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="form-section" id="form">
+      <div class="container">
+        <div class="form-section__box">
+          <h2 class="form-section__title">
+            <span class="red-text">
+              Заповнюйте свої дані
+            </span>
+             та наші експерти зв’яжуться з вами протягом 24 годин
+          </h2>
+
+          <form class="form-section__form main-form">
+            <ul class="main-form__list">
+              <li class="main-form__item">
+                <input placeholder="Ваше ім’я" type="text" name="name" class="input-name">
+              </li>
+              <li class="main-form__item">
+                <svg width='30' height='20'>
+                  <use href='img/sprite/sprite.svg#flag-ua'></use>
+                </svg>
+                <input placeholder="+380" type="tel" name="phone" class="input-phone">
+              </li>
+              <li class="main-form__item">
+                <input placeholder="Напрямок навчання" type="text" name="education" class="input-education">
+              </li>
+            
+            </ul>
+
+            <div class="main-form__bottom">
+              <button class="main-button" data-btn-modal="success">Зареєструватись на консультацію*</button>
+
+              <p><b class="red-text">*Кількість місць на безкоштовну консультацію обмежена</b></p>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+
+
+
+</body>
+
+<script src="js/main.js"></script>
+
+</html>

@@ -1,0 +1,49 @@
+.university-acc{
+    width: 100%;
+
+    &__content{
+        min-height: var(--acc-height);
+    }
+
+
+    &__btn{
+        color: rgba(var(--cl-e),1.0);
+        font-family: var(--font-family);
+        font-size: clamp(16px, 3.117vw, 24px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120.833%;
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-gap: clamp(5px, 1.299vw, 10px);
+        border-radius: 55px;
+        background: rgba(var(--bg-d),1.0);
+        padding: 20px;
+        transition: all .4s;
+
+        margin-top: clamp(40px, 7.792vw, 60px);
+
+        svg{
+            fill: currentColor;
+            transition: transform .4s;
+            width: clamp(20px, 5.195vw, 40px);
+            height: auto;
+        }
+
+        &:hover{
+            background-color: rgba(var(--bg-e),1.0);
+            color: rgba(var(--cl-a),1.0);
+        }
+
+        &.active{
+            svg{
+                transform: scaleY(-1);
+            }
+        }
+    }
+
+
+}

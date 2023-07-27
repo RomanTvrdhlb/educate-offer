@@ -1,0 +1,41 @@
+.form-section {
+  background-color: rgba(var(--bg-g),1.0);
+  padding-top: clamp(40px, 5.556vw, 65px);
+  padding-bottom: clamp(40px, 11.688vw, 90px);
+
+
+  position: relative;
+  z-index: 1;
+
+  @include small-tablet {
+    background-image: none;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(30px, 3.419vw, 40px) 0;
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(23px, 4.545vw, 35px);
+    line-height: normal;
+    max-width: 967px;
+    text-align: center;
+    color: rgba(var(--cl-c),1.0);
+      
+    .red-text {
+      color: rgba(var(--cl-m),1.0);
+    }
+  }
+
+  &__form {
+    max-width: 770px;
+    width: 100%;
+    
+  }
+}

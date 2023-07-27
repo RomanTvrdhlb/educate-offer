@@ -1,0 +1,89 @@
+@include('partials/head.html')
+
+<body class="register">
+  @include('partials/header.html')
+
+  <main>
+
+    <section class="hero-section hero-section--register">
+      <div class="container">
+        <div class="hero-section__box">
+          <div class="hero-section__row">
+            <ul class="hero-section__list">
+              <li class="hero-section__list-item">
+                <svg width='45' height='45'>
+                  <use href='img/sprite/sprite.svg#calendar'></use>
+                </svg>
+                <span class="date"></span>
+              </li>
+              <li class="hero-section__list-item">
+                <svg width='45' height='45'>
+                  <use href='img/sprite/sprite.svg#timer'></use>
+                </svg>
+                19:00
+              </li>
+            </ul>
+
+            <h1 class="hero-section__title">
+              <span class="red-text">Як гарантовано вступити на бюджет до ВНЗ </span>
+              <span class="blue-text">Словаччини та Чехії учням  9, 10, 11 класів</span>
+            </h1>
+          </div>
+
+          <div class="register-box">
+            <div class="main-top register-box__top">
+              <h2 class="main-top__title">
+                Реєстрація <i class="brush">майже</i> завершена
+              </h2>
+
+              <div class="register-box__wrapper">
+                <span class="register-box__status" data-value="70"></span>
+              </div>
+
+            </div>
+
+            <div class="register-box__info">
+              <p>
+                Підтвердіть вашу реєстрацію <br> через
+                <i class="purpure-text">Viber</i> або <i class="blue-text">Telegram</i> та <br> отримайте ваш <i class="red-text"><b class="brush">подарунок</b></i> <br> в один клік
+              </p>
+
+              <div class="register-box__buttons">
+                <button class="main-button main-button--purpure">
+                  <svg width='35' height='35'>
+                    <use href='img/sprite/sprite.svg#viber'></use>
+                  </svg>
+                  Viber
+                </button>
+                <button class="main-button main-button--blue">
+                  <svg width='30' height='27'>
+                    <use href='img/sprite/sprite.svg#telegram2'></use>
+                  </svg>
+                  Telegram
+                </button>
+              </div>
+            </div>
+
+            <div class="register-box__image">
+              <picture>
+                <source type='image/webp' srcset='img/phone.webp'>
+                <img loading='lazy' width='415' height='720' src='img/phone.png' alt='image'>
+              </picture>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+
+
+
+</body>
+
+<script src="js/main.js"></script>
+</html>

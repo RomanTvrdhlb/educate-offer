@@ -1,0 +1,79 @@
+header{
+  padding-bottom: clamp(22px, 5.844vw, 45px);
+}
+
+.header {
+  padding-top: clamp(10px, 2.222vw, 26px);
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  align-items: center;
+  grid-gap: 10px;
+
+  @include tablet{
+    grid-template-columns: auto 1fr;
+  }
+
+  &__box{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-gap: 10px;
+    justify-items: end;
+
+    @include tablet{
+      grid-template-columns: 0.7fr 1fr;
+    }
+
+    @include mobile{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__logo {
+
+    @include small-tablet {
+      svg {
+        width: clamp(120px, 28.831vw, 222px);
+        height: auto;
+      }
+    }
+  }
+
+ 
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 25px;
+    flex-shrink: 0;
+
+    a{
+      display: flex;
+      align-items: center;
+      color: rgba(var(--cl-c),1.0);
+    
+
+      &:hover{
+        svg{
+          fill: rgba(var(--cl-m),1.0)
+        }
+      }
+    }
+
+    svg {
+      fill: rgba(var(--cl-e),1.0);
+      transition: all 0.3s ease;
+      
+      height: auto;
+
+      @include mobile{
+        width: clamp(30px, 5.195vw, 40px);
+      }
+    }
+
+    @include mobile{
+      display: none;
+    }
+  }
+
+  
+}

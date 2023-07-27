@@ -1,0 +1,72 @@
+.second-section {
+  position: relative;
+  z-index: 2;
+  padding-bottom: clamp(35px, 7.792vw, 60px);
+
+  &:before {
+    position: absolute;
+    content: '';
+    width: Min(40.519vw, 312px);
+    height: Min(81.948vw, 631px);
+    background-image: var(--second-icon);
+    background-size: 100% 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    bottom: 17%;
+    right: 0;
+
+    @include laptop{
+      right: -10%;
+    }
+
+    @include tablet {
+      content: none;
+    }
+  }
+
+  &__box {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(30px, 6.494vw, 50px);
+  }
+
+  &__image {
+    display: flex;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__title {
+    color: rgba(var(--cl-c),1.0);
+    text-align: center;
+    font-family: var(--font-family2);
+    font-size: clamp(20px, 4.545vw, 35px);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 125%;
+  }
+
+  &__wrapper{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(30px, 6.494vw, 50px);
+    max-width: 970px;
+    align-items: center;
+  }
+
+
+  .check-list{
+    &__item{
+      svg{
+        width: clamp(30px, 5.844vw, 45px);
+      }
+    }
+}
+}

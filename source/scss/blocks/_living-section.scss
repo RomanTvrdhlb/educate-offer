@@ -1,0 +1,40 @@
+.living-section{
+    padding: clamp(40px, 5.128vw, 60px) 0;
+    position: relative;
+    z-index: 1;
+
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: Min(30.909vw, 238px);
+        height: Min(60.13vw, 463px);
+        background-image: var(--second-icon);
+        background-size: 100% 100%;
+        background-position: right top;
+        background-repeat: no-repeat;
+        z-index: -1;
+        bottom: 7%;
+        right: 0;
+
+        @include laptop{
+          right: -10%;
+        }
+
+        @include tablet {
+          content: none;
+        }
+      }
+
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: clamp(30px, 4.274vw, 50px);
+    }
+
+    .main-top{
+        max-width: 830px;
+    }
+}

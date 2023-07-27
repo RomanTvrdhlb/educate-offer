@@ -1,0 +1,143 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+span {
+  margin: 0;
+  padding: 0;
+
+
+  .red-text {
+    color:  rgba(var(--cl-m),1.0);
+    display: inline;
+    width: 100%;
+  }
+
+  .purpure-text {
+    color:  rgba(var(--cl-l),1.0);
+    display: inline;
+    width: 100%;
+  }
+
+  .blue-text {
+    color: rgba(var(--cl-e),1.0);
+    display: inline;
+    width: 100%;
+
+    &--mode{
+      text-decoration: underline;
+      text-underline-offset: 5px;
+      font-style: italic;
+    }
+  }
+}
+
+p{
+  color: rgba(var(--cl-c),1.0);
+  font-family: var(--font-family);
+  font-size: clamp(16px, 2.727vw, 21px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 138.095%;
+}
+
+.underline-text{
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  color: currentColor;
+
+  &--italic{
+    font-style: italic;
+  }
+}
+
+
+.main-button {
+  svg {
+    fill: currentColor;
+  }
+
+  text-align: center;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(16px, 2.727vw, 21px);
+  line-height: 138.095%;
+  color:  rgba(var(--cl-a),1.0);
+  border-radius: clamp(50px, 4.701vw, 55px);
+  padding: clamp(10px, 2.137vw, 25px) clamp(10px, 5.983vw, 70px);
+  width: fit-content;
+  transition: all .3s ease;
+  background: rgba(var(--bg-l),1.0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover{
+    background: rgba(var(--bg-n),1.0);
+  }
+
+  &--blue {
+    background: rgba(var(--bg-e),1.0);
+
+    &:hover {
+      background: rgba(var(--bg-d),1.0);
+      color: rgba(var(--cl-c),1.0);
+    }
+  }
+
+  &--transparent{
+    background-color: transparent;
+    color: rgba(var(--cl-c),1.0);
+    border: 2px solid rgba(var(--cl-e));
+    max-width: 551px;
+
+    svg{
+      fill: currentColor;
+    }
+
+    &:hover{
+      color: rgba(var(--bg-a),1.0);
+      background-color: rgba(var(--bg-e),1.0);
+    }
+  }
+}
+
+.pretitle-top{
+  border-radius: 25px;
+  background: rgba(var(--bg-m),1.0);
+  padding: clamp(15px, 3.247vw, 25px) clamp(20px, 3.896vw, 30px);
+  color: rgba(var(--cl-c),1.0);
+  font-family: var(--font-family);
+  font-size: clamp(14px, 2.597vw, 20px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+
+  svg{
+    fill: currentColor;
+  }
+}
+
+.down-button{
+  display: flex;
+  width: fit-content;
+  align-self: center;
+  svg{
+    fill: rgba(var(--bg-a),1.0);
+    transition: all .4s;
+    width: clamp(60px, 12.987vw, 100px);
+    height: clamp(60px, 12.987vw, 100px);
+  }
+
+  &--blue{
+    svg{
+      fill: rgba(var(--bg-e),1.0);
+    }
+  }
+}

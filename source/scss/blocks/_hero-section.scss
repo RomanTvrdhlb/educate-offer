@@ -1,0 +1,127 @@
+.hero-section {
+  margin-top: clamp(100px, 19.481vw, 150px);
+  padding-bottom: clamp(120px, 29.091vw, 224px);
+  position: relative;
+
+  @include tablet{
+    margin-top: 0;
+    padding-bottom: clamp(40px, 5.128vw, 60px)
+  }
+
+
+  &::before{
+    background-image: var(--hero-icon);
+    background-position:left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    width: Min(30.649vw, 236px);
+    height: Min(60.13vw, 463px);
+    left: 0;
+    bottom: -33%;
+
+
+    @include laptop{
+      left: -10%;
+    }
+
+    @include tablet{
+      display: none;
+    }
+
+  }
+
+
+
+  @include ios {
+    .container {
+      padding: 0 10px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(15px, 2.564vw, 30px) 0;
+    position: relative;
+    z-index: 1;
+
+    @include small-tablet{
+      align-items: center;
+    }
+
+  }
+
+  &__image {
+    position: absolute;
+    right: -31%;
+    top: 50%;
+    transform: translateY(-47%);
+    z-index: -1;
+
+    width: Min(106.494vw, 820px);
+    height: Min(101.688vw, 783px);
+
+    img,picture{
+      width: 100%;
+    }
+
+    @include laptop{
+      right: -20%;
+    }
+
+    @include tablet {
+      align-self: center;
+      max-width: 800px;
+      width: initial;
+      height: initial;
+      position: relative;
+      right: 0;
+      z-index: 1;
+      transform: none;
+    }
+
+
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 800;
+    font-size: clamp(28px, 8.312vw, 64px);
+    line-height: 105%;
+    max-width: Min(100vw, 770px);
+    display: inline;
+
+    @include small-tablet {
+      max-width: 100%;
+      br{
+        display: none;
+      }
+    }
+
+    @include mobile {
+      text-align: center;
+    }
+
+  }
+
+  &__deskr{
+    max-width: Min(73.896vw, 569px);
+    font-weight: 400;
+
+  }
+
+  &__btn {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @include ios {
+      width: 100%;
+      text-align: center;
+      display: inline-block;
+    }
+  }
+}
+

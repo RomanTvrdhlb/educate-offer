@@ -1,0 +1,96 @@
+.sales-section{
+    padding: clamp(40px, 5.128vw, 60px) 0;
+    position: relative;
+    z-index: 1;
+
+
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: min(30vw, 231px);
+        height: min(60vw, 462px);
+        background-image: var(--spiker-icon);
+        background-size: 100% 100%;
+        background-position: right top;
+        background-repeat: no-repeat;
+        z-index: -1;
+        bottom: 7%;
+        left: 0;
+
+        @include laptop{
+            left: -10%;
+        }
+    
+        @include tablet {
+          content: none;
+        }
+      }
+
+
+      &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: clamp(30px, 4.274vw, 50px);
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(15px, 3.247vw, 25px);
+        max-width: 770px;
+
+
+        > *{
+            font-size: clamp(18px, 2.987vw, 23px);
+            line-height: 126.087%;
+            max-width: 770px;
+            font-weight: 400;
+        }
+    }
+
+    .check-list{
+        padding:0 clamp(38px, 5.844vw, 45px);
+
+        p{
+            font-weight: 400;
+        }
+
+        @include small-tablet{
+            padding: 0;
+        }
+    }
+
+    .main-top{
+        max-width: 840px;
+    }
+
+
+    &--completing{
+
+
+        &::before {
+            background-image: var(--completing-icon);
+            bottom: 7%;
+            right: 0;
+            left: initial;
+        
+            @include laptop{
+                right: -10%;
+            }
+        
+            @include tablet {
+              content: none;
+            }
+          }
+    }
+
+    .count-list{
+        max-width: 770px;
+    }
+
+    .main-top{
+        max-width: 615px;
+    }
+}

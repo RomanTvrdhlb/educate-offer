@@ -1,0 +1,7 @@
+.images-list{
+    max-width: 970px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: clamp(20px, 3.896vw, 30px);
+
+}

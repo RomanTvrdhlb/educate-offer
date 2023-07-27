@@ -1,0 +1,195 @@
+.work-section{
+    padding: clamp(40px, 5.128vw, 60px) 0;
+    background: rgba(var(--bg-k),1.0);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: Min(30.909vw, 238px);
+        height: Min(60.13vw, 463px);
+        background-image: var(--diversity-icon-second);
+        background-size: 100% 100%;
+        background-position: right top;
+        background-repeat: no-repeat;
+        transform: scaleX(-1);
+        z-index: -1;
+        bottom: -9%;
+        left: 0;
+
+        @include laptop{
+            left: -10%;
+        }
+    
+        @include tablet {
+          content: none;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: Min(30.909vw, 238px);
+        height: Min(60.13vw, 463px);
+        background-image: var(--diversity-icon-second);
+        background-size: 100% 100%;
+        background-position: right top;
+        background-repeat: no-repeat;
+        z-index: -1;
+        top: -7%;
+        right: 0;
+
+        @include laptop{
+            right: -10%;
+        }
+    
+        @include tablet {
+          content: none;
+        }
+      }
+
+    
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: clamp(30px, 4.274vw, 50px);
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(15px, 3.247vw, 25px);
+        max-width: 770px;
+
+       > p{
+            font-size: clamp(18px, 2.987vw, 23px);
+            line-height: 126.087%;
+            font-weight: 400;
+        }
+    }
+
+    &__deskr{
+        display: flex;
+        align-items: center;
+        grid-gap: 10px;
+        > svg{
+            fill: rgba(var(--bg-n),1.0);
+            margin-top: -5px;
+        }
+    }
+
+    .main-top{
+        max-width: 800px;
+    }
+
+    .check-list{
+        grid-gap: 12px;
+        max-width: 680px;
+        padding-left: clamp(20px, 5.844vw, 45px);
+
+        &__item{
+            grid-gap: 20px;
+        }
+
+        *{
+            font-weight: 400;
+            font-size: clamp(16px, 2.727vw, 21px);
+            line-height: 138.095%;
+        }
+
+        svg{
+            width: clamp(20px, 4.545vw, 35px);
+            fill: rgba(var(--bg-e),1.0);
+        }
+
+        @include small-tablet{
+            padding-left: 0;
+        }
+    }
+
+    .pretitle-top{
+        text-align: center;
+        font-size: clamp(14px, 2.597vw, 20px);
+        line-height: 130%;
+    }
+
+    &--prospects{
+
+        &::after {
+            top: initial;
+            bottom: -24%;
+            left: 0;
+            transform: scale(-1);
+            right: initial;
+          }
+
+          &::before{
+            display: none;
+          }
+
+        .work-section{
+        &__box{
+            grid-gap: clamp(20px, 3.896vw, 30px);
+        }
+        }
+    }
+
+    &--road{
+        padding: clamp(40px, 5.128vw, 60px) 0 10px;
+        &::after {
+            top: -23%;
+            right: 0;
+            background-image: var(--road-icon--second);
+            width: Min(40.909vw, 315px);
+            height: Min(81.818vw, 630px);
+
+            @include laptop{
+                right: -10%;
+            }
+          }
+
+          &::before {
+            background-image: var(--road-icon);
+            width: Min(40.909vw, 315px);
+            height: Min(81.818vw, 630px);
+            transform: none;
+            bottom: -35%;
+            left: 0;
+
+            @include laptop{
+                left: -10%;
+            }
+          }
+
+       
+
+        .work-section{
+            &__deskr{
+                flex-direction: column;
+                max-width: var(--content-width--mode);
+                grid-gap: clamp(20px, 3.896vw, 30px);
+                align-items: center;
+
+                p{
+                    font-weight: 400;
+                }
+             }
+            }
+    }
+
+    .main-top{
+        max-width: 760px;
+
+        &__title{
+            font-size: clamp(18px, 3.896vw, 30px);
+            line-height: 125%;
+        }
+    }
+
+    .down-button{
+        margin-top: -15px;
+    }
+}

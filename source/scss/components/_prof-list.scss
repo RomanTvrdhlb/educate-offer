@@ -1,0 +1,26 @@
+.prof-list{
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+grid-gap: clamp(10px, 1.948vw, 15px);
+
+
+&__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: clamp(5px, 1.299vw, 10px);
+    width: fit-content;
+    white-space: nowrap;
+}
+
+&__name{
+    font-style: italic;
+    padding: clamp(5px, 0.909vw, 5px) clamp(5px, 2.597vw, 20px);
+    border-radius: 20px;
+    background: rgba(var(--bg-m),1.0);
+    font-size: clamp(14px, 2.727vw, 21px);
+}
+}
