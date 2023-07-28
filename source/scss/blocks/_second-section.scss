@@ -50,6 +50,15 @@
     font-style: normal;
     font-weight: 900;
     line-height: 125%;
+
+    @include desktop{
+      width: 90%;
+      align-self: center;
+    }
+
+    @include laptop{
+      width: 100%;
+    }
   }
 
   &__wrapper{

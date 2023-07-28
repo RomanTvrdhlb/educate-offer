@@ -9,10 +9,12 @@
   --body-font-size: 16px;
   --body-color: #000;
   --content-width: 1170px;
+  --content-width-hero: 1300px;
   --content-width--mode: 770px;
   --container-offset: 20px;
 
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-width--hero: calc(var(--content-width-hero) + (var(--container-offset) * 2));
   --register-status: 70%;
 
 // --------------- default JS variable ---------------

@@ -21,12 +21,15 @@
     left: 0;
     bottom: -33%;
 
+    @media (max-width: (1650px)) {
+      left: -7%;
+    }
 
-    @include laptop{
+    @include desktop{
       left: -10%;
     }
 
-    @include tablet{
+    @include laptop{
       display: none;
     }
 
@@ -47,6 +50,7 @@
     position: relative;
     z-index: 1;
 
+
     @include small-tablet{
       align-items: center;
     }
@@ -55,7 +59,7 @@
 
   &__image {
     position: absolute;
-    right: -31%;
+    right: -19%;
     top: 50%;
     transform: translateY(-47%);
     z-index: -1;
@@ -67,8 +71,22 @@
       width: 100%;
     }
 
+    @media (max-width: (1700px)) {
+      right: -15%;
+    }
+
+    @media (max-width: (1600px)) {
+      right: -11%;
+    }
+
+    @include desktop{
+      right: -5%;
+      width: 700px;
+      transform: translateY(-40%);
+    }
+
     @include laptop{
-      right: -20%;
+      right: -15%;
     }
 
     @include tablet {
