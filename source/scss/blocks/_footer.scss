@@ -21,7 +21,7 @@ footer {
   }
 
   &__logo svg {
-    width: clamp(150px, 38.961vw, 300px);
+    width: clamp(120px, 38.961vw, 300px);
     height: auto;
   }
 
@@ -43,6 +43,38 @@ footer {
       a {
         font-weight: 400;
       }
+      
+      @include small-tablet{
+        &:nth-child(2){
+          position: relative;
+    
+          &:before{
+            position: absolute;
+            content: '';
+            top: -12px;
+            left: 0;
+            height: 1px;
+            width: 100%;
+            background-color: rgba(var(--bg-a),1.0);
+    
+          }
+        }
+      }
+    }
+
+   
+
+    @include small-tablet{
+      grid-gap: 0;   
+
+      .contact-list{
+        padding-bottom: 26px;
+        &__link svg{
+          width: 30px;
+          height: auto;
+        }
+      }
+
     }
   }
 

@@ -34,43 +34,18 @@
     font-weight: 600;
     font-size: clamp(16px, 1.709vw, 20px);
     line-height: 100%;
-    color: rgba(var(--cl-a),1.0);
+    color: rgba(var(--cl-a), 1);
   }
 }
 
-
-.header-contact{
-  @include tablet{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: space-between;
-  
-    .contact-list{
- 
-  
-    &__link{
-     
-    } 
-  }
-   
-  }
-
-
-  .contact-list{
-
-    &__item{
+.header-contact {
+  .contact-list {
+    &__item {
       align-items: flex-start;
-
-      @include tablet{
-        &:last-child {
-          grid-column: 1/-1;
-          order: -1;
-        }
-      }
     }
 
-     &__link{
-      color: rgba(var(--cl-c),1.0);
+    &__link {
+      color: rgba(var(--cl-c), 1);
       transition: all 0.3s ease;
       text-align: right;
       font-size: clamp(18px, 2.857vw, 22px);
@@ -80,44 +55,61 @@
       display: flex;
       grid-gap: 7px;
 
-    @include tablet{
-      font-size: clamp(16px, 2.857vw, 22px);
-      white-space: nowrap;
-    }
+      @include tablet {
+        font-size: clamp(16px, 2.857vw, 22px);
+        white-space: nowrap;
+      }
 
-    i{
-      letter-spacing: 2.64px;
-      font-style: normal;
-    }
+      i {
+        letter-spacing: 2.64px;
+        font-style: normal;
+      }
 
-    b{
-      letter-spacing: 1.1px;
-    }
+      b {
+        letter-spacing: 1.1px;
+      }
 
-    &--mode{
-      b{
-        letter-spacing: -0.99px;
+      &--mode {
+        b {
+          letter-spacing: -0.99px;
+        }
+      }
+
+      svg {
+        fill: rgba(var(--cl-e), 1);
+        transition: all 0.3s ease;
+
+        @include mobile {
+          width: clamp(30px, 5.195vw, 40px);
+        }
+      }
+
+      &:hover {
+        color: rgba(var(--cl-e), 1);
+        svg {
+          fill: rgba(var(--cl-m), 1);
+        }
       }
     }
-
-    svg {
-      fill: rgba(var(--cl-e),1.0);
-      transition: all 0.3s ease;
-
-      @include mobile{
-        width: clamp(30px, 5.195vw, 40px);
-      }
-    }
-
-    &:hover{
-      color: rgba(var(--cl-e),1.0);
-      svg{
-        fill: rgba(var(--cl-m),1.0)
-      }
-    }
-
-
-   
   }
-}
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    width: 100%;
+    grid-gap: 20px clamp(25px, 5.195vw, 40px);
+
+    .contact-list {
+      &__item {
+        align-items: center;
+        &:last-child {
+          flex-direction: row;
+          grid-gap: clamp(25px, 5.195vw, 40px);
+          grid-column: 1/-1;
+          order: -1;
+        }
+      }
+    }
+  }
 }

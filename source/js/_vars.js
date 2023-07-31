@@ -14,8 +14,7 @@ export default {
   modalsButtonMode: [...document.querySelectorAll("[data-mode-modal]")],
   innerButtonModal: [...document.querySelectorAll("[data-btn-inner]")],
   // customSelect: [...document.querySelectorAll("[data-select]")],
-  // burger: document.querySelector('.header .burger'),
-
+  burgers: [...document.querySelectorAll('.burger')],
   footer: document.querySelector("footer"),
   header: document.querySelector(".header"),
 

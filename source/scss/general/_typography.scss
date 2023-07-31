@@ -106,6 +106,22 @@ p{
       background-color: rgba(var(--bg-e),1.0);
     }
   }
+
+  &--white{
+    background-color: rgba(var(--bg-a),1.0);
+    color: rgba(var(--cl-m),1.0);
+    border: 2px solid rgba(var(--bg-a),1.0);
+    max-width: 551px;
+
+    svg{
+      fill: currentColor;
+    }
+
+    &:hover{
+      background-color: rgba(var(--bg-a),1.0);
+      border: 2px solid currentColor;
+    }
+  }
 }
 
 .pretitle-top{

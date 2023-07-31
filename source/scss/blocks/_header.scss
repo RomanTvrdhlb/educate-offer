@@ -11,6 +11,7 @@ header{
 
   @include tablet{
     grid-template-columns: auto 1fr;
+    grid-gap: 20px;
   }
 
   &__box{
@@ -20,7 +21,12 @@ header{
     justify-items: end;
 
     @include tablet{
-      grid-template-columns: 0.7fr 1fr;
+      display: flex;
+
+      order: 3;
+      grid-column: span 2;
+
+
     }
 
     @include mobile{
@@ -30,9 +36,9 @@ header{
 
   &__logo {
 
-    @include small-tablet {
+    @include tablet {
       svg {
-        width: clamp(120px, 28.831vw, 222px);
+        width: clamp(133px, 28.831vw, 200px);
         height: auto;
       }
     }
@@ -70,7 +76,7 @@ header{
       }
     }
 
-    @include mobile{
+    @include tablet{
       display: none;
     }
   }

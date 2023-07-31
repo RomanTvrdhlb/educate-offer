@@ -1,11 +1,15 @@
 import vars from '../_vars';
 import { toggleCustomClass, addCustomClass, removeCustomClass } from '../functions/customFunctions';
-
-const {accParrent} = vars;
+const {accParrent, bodyEl} = vars;
 
 const accBtn = document.querySelector('.university-acc__btn'); 
 const innerBtn = 'Переглянути більше університетів';
 const innerBtnOpen = 'Згорнути';
+
+
+
+
+const pagePosition = window.scrollY;
 
 window.addEventListener('DOMContentLoaded', () => {
   accParrent && accParrent.map(function (accordionParrent) {
@@ -37,6 +41,9 @@ window.addEventListener('DOMContentLoaded', () => {
         accordion.style.maxHeight = accordion.scrollHeight + "px";
         addCustomClass(accordion, className);
         accBtn.firstElementChild.innerHTML = (innerBtnOpen);
+        
+        bodyEl.dataset.position = pagePosition;
+        bodyEl.style.top = `-${pagePosition}px`;
       };
 
       const toggleAccordionButton = function (button, className = "active") {
