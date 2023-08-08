@@ -72,11 +72,15 @@
     }
 
     @media (max-width: (1700px)) {
-      right: -15%;
+      width: Min(59.615vw, 775px);
+      right: -16%;
+      transform: translateY(-45%);
     }
 
     @media (max-width: (1600px)) {
-      right: -11%;
+      width: Min(59.615vw, 700px);
+      right: -10%;
+      transform: translateY(-40%);
     }
 
     @include desktop{
@@ -87,6 +91,12 @@
 
     @include laptop{
       right: -15%;
+    }
+
+    @media (max-width: (1110px)) {
+      right: -19%;
+      width: 640px;
+      transform: translateY(-33%);
     }
 
     @include tablet {
@@ -111,6 +121,17 @@
     line-height: 105%;
     max-width: Min(100vw, 770px);
     display: inline;
+    color: rgba(var(--cl-c),1.0);
+    z-index: 1;
+
+    @include desktop{
+      max-width: 675px;
+
+    }
+
+    @include tablet{
+      max-width: Min(100vw, 770px);
+    }
 
     @include small-tablet {
       max-width: 100%;
@@ -128,7 +149,7 @@
   &__deskr{
     max-width: Min(73.896vw, 569px);
     font-weight: 400;
-
+    z-index: 1;
   }
 
   &__btn {

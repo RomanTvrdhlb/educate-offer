@@ -9,7 +9,8 @@ const innerBtnOpen = 'Згорнути';
 
 
 
-const pagePosition = window.scrollY;
+let pagePosition;
+
 
 window.addEventListener('DOMContentLoaded', () => {
   accParrent && accParrent.map(function (accordionParrent) {
@@ -35,6 +36,11 @@ window.addEventListener('DOMContentLoaded', () => {
         accordion.style.maxHeight = 0;
         removeCustomClass(accordion, className);
         accBtn.firstElementChild.innerHTML = (innerBtn);
+
+        window.scroll({
+          top: pagePosition,
+          left: 0
+        });
       };
 
       const openAccordion = function (accordion, className = "active") {
@@ -42,8 +48,7 @@ window.addEventListener('DOMContentLoaded', () => {
         addCustomClass(accordion, className);
         accBtn.firstElementChild.innerHTML = (innerBtnOpen);
         
-        bodyEl.dataset.position = pagePosition;
-        bodyEl.style.top = `-${pagePosition}px`;
+        pagePosition  = window.scrollY;
       };
 
       const toggleAccordionButton = function (button, className = "active") {

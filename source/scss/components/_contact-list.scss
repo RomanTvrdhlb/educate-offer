@@ -95,7 +95,7 @@
 
   @include tablet {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 40px);
     justify-content: center;
     width: 100%;
     grid-gap: 20px clamp(25px, 5.195vw, 40px);
